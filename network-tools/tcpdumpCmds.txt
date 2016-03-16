@@ -1,0 +1,11 @@
+
+
+#Don't  resolve hostnames or or port names (-nn)
+#Very Verbose (-vv)
+#Show packet content in both hex and ASCII -(X)
+#Print absolute Sequence Numbers (-S)
+#snap length size (-s 1514)
+#100MB per capture File (-C 100) 
+#Overwrite after 50 capture files and store in tmp folder as filename.pcap (-W 50 /tmp/filename.pcap) 
+
+tcpdump -nnvvXSs 1514 -i eth0 -C 100  -W 50 /tmp/filename.pcap
