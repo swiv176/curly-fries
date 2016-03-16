@@ -3,10 +3,10 @@
 import httplib #For Python 2
 
 #Get list of users
-fname = "/home/root/grey/apachefuzz.txt"
+fname = "/home/fuzz.txt"
 with open(fname) as f:
     content = f.read().splitlines()
-host = "www.wework.com"
+host = "www.example.com"
 
 for path in content:
         #conn = http.client.HTTPConnection(host) # Python 3
