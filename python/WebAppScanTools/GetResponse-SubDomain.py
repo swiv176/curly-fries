@@ -3,10 +3,10 @@ import httplib
 
 
 #Get list of users
-fname = "/home/root/grey/subdomains.txt"
+fname = "/home/subdomains.txt"
 with open(fname) as f:
     content = f.read().splitlines()
-host = "wework.com"
+host = "example.com"
 
 for sub in content:
 
