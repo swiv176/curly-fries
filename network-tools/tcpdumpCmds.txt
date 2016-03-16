@@ -6,6 +6,11 @@
 #Print absolute Sequence Numbers (-S)
 #snap length size (-s 1514)
 #100MB per capture File (-C 100) 
-#Overwrite after 50 capture files and store in tmp folder as filename.pcap (-W 50 /tmp/filename.pcap) 
+#Overwrite after 50 capture files (-W 50)
+#store in tmp folder as filename.pcap (-W 50 /tmp/filename.pcap) 
 
-tcpdump -nnvvXSs 1514 -i eth0 -C 100  -W 50 /tmp/filename.pcap
+tcpdump -nnvvXSs 1514 -i eth0 -C 100 (-w /tmp/filename.pcap)
+
+#Put eth0 into promiscous mode
+ifconfig eth0 up 
+ifconfig eth0 promisc
